@@ -1,0 +1,4 @@
+﻿  csv.cpp
+G:\lab0b\lab0b\csv.cpp(59): warning C4715: Csv::openOutputFile: значение возвращается не при всех путях выполнения
+G:\lab0b\lab0b\csv.cpp(18): warning C4715: Csv::openInputFile: значение возвращается не при всех путях выполнения
+  lab0b.vcxproj -> G:\lab0b\Debug\lab0b.exe
