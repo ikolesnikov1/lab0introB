@@ -61,7 +61,7 @@ int Csv::openOutputFile(char** argv) {
 void Csv::writeInOutputFile() {
     for (auto i : sortFreq) {
         double freqPercentage = (double)(i.first * 100) / total;
-        fout << i.second << ", " << i.first << ", " << freqPercentage << "%" << std::endl;
+        fout << i.second << ";" << i.first << ";" << freqPercentage << "%" << std::endl;
 
     }
     fout.close();
