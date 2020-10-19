@@ -5,11 +5,11 @@ bool comparator(const std::pair<int, std::string>& a, const std::pair<int, std::
 }
 
 
-void Csv::parcer(std::string &inputFile) {
+void Csv::parcer(const std::string &inputFile) {
     std::ifstream fin;
     fin.open(inputFile);
     if (!fin) {
-        std::cout << "Input file not found";
+        throw std::logic_error("Unable to open file");
     }
 
     while (!fin.eof()) {
@@ -34,11 +34,11 @@ void Csv::parcer(std::string &inputFile) {
 }
 
 
-void Csv::writeInOutputFile(std::string &outputFile) {
+void Csv::writeInOutputFile(const std::string &outputFile) {
     std::ofstream fout;
     fout.open(outputFile);
     if (!fout) {
-        std::cout << "Output file not found";
+        throw std::logic_error("Unable to open file");
     }
 
     std::vector<std::pair<int, std::string>> sortFreq;
