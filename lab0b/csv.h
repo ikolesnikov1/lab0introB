@@ -11,7 +11,6 @@ class Csv {
     int total = 0;
 
 public:
-    void parcer(std::string &inputFile);
-    void writeInOutputFile(std::string &outputFile);
+    void parcer(const std::string &inputFile);
+    void writeInOutputFile(const std::string &outputFile);
 };
-
